@@ -1,0 +1,11 @@
+Development Considerations :
+
+    1. The dividend calculation was missing from the requirement document I consider that :
+        -   Preferred Stock Dividend = Fixed Dividend * Par Value * Total Number of Shares
+        -   Common Stock Dividend = Dividend Yield * Par Value * Total Number of Shares
+
+    2. I consider that there are not race conditions between the traders. Only one trader can give orders from the command line and that's why the code is not concurrent..
+
+    3. Also I considered for simplicity reasons that there are not any transactional issues with DB
+        -   (see my comment in method SuperSimpleStocksServiceImpl.doExecuteOrder() and PersistenceStockServiceImpl.commitTransaction())
+

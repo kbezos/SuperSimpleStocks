@@ -1,0 +1,6 @@
+Execute the code from the jar file
+
+- Install Java 1.7
+- Create the dir c:/logs/assignment in order to see the application log file
+- Under the path of the jar file open a command line window
+- Type java -jar xxxx.jar
